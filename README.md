@@ -11,8 +11,8 @@ virtualenv airflow_env
 source airflow_env/bin/activate
 
 export AIRFLOW_HOME=~/airflow
-pip install apache-airflow
-pip install pandas openpyxl ray[tune] neuralforecast
+pip install pandas apache-airflow neuralforecast ray[tune] torch scikit-learn openpyxl
+
 
 airflow db init
 
